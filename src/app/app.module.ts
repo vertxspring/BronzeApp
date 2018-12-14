@@ -8,6 +8,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import {MatChipsModule} from '@angular/material/chips';
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +20,8 @@ import {MatTableModule} from '@angular/material/table';
     MatGridListModule,
     MatInputModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

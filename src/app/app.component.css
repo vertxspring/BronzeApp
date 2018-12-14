@@ -4,6 +4,7 @@
 
 table {
     width: 100%;
+    margin-right: 60px;
   }
   
   .mat-row:nth-child(even){
@@ -13,4 +14,8 @@ table {
 .mat-row:nth-child(odd){
     background-color:#ffd740;
   
+    }
+
+    .right-align {    text-align: right; 
+    padding-right:40px;
     }

@@ -5,80 +5,80 @@ const MOCK_DATA = {
   portfolio1: [
     {
       'assetId': '1',
-      'currency': '2',
+      'currency': 'USD',
       'price': '3',
-      'priceDate': '4'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '5',
-      'currency': '6',
+      'currency': 'USD',
       'price': '7',
-      'priceDate': '8'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '9',
-      'currency': '10',
+      'currency': 'USD',
       'price': '11',
-      'priceDate': '12'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '13',
-      'currency': '14',
+      'currency': 'USD',
       'price': '15',
-      'priceDate': '16'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '17',
-      'currency': '18',
+      'currency': 'INR',
       'price': '19',
-      'priceDate': '20'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '21',
-      'currency': '22',
+      'currency': 'CAD',
       'price': '23',
-      'priceDate': '24'
+      'priceDate': '12-13-2018'
 
     }
   ], portfolio2: [
     {
       'assetId': '25',
-      'currency': '26',
+      'currency': 'USD',
       'price': '27',
-      'priceDate': '28'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '29',
-      'currency': '30',
+      'currency': 'USD',
       'price': '31',
-      'priceDate': '32'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '33',
-      'currency': '34',
+      'currency': 'USD',
       'price': '35',
-      'priceDate': '36'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '37',
-      'currency': '38',
+      'currency': 'USD',
       'price': '39',
-      'priceDate': '40'
+      'priceDate': '12-13-2018'
 
     },
     {
       'assetId': '41',
-      'currency': '42',
+      'currency': 'CAD',
       'price': '43',
-      'priceDate': '44'
+      'priceDate': '12-13-2018'
 
     }
 

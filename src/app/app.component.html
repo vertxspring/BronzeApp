@@ -13,24 +13,27 @@
   </mat-grid-tile>
   <mat-grid-tile colspan="3" rowspan="16">
  <div *ngIf = 'buttonClicked && dataSource===undefined'>
-Wrong keyword
+    <mat-chip-list>
+        <mat-chip color="accent" selected>Error Portfolio Name Not Found</mat-chip>
+        
+    </mat-chip-list>
  </div>   
-<table mat-table [dataSource]="dataSource" *ngIf='dataSource!=null' class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" *ngIf='dataSource!=null'>
 
   
     <ng-container matColumnDef="assetId">
       <th mat-header-cell *matHeaderCellDef> Asset ID </th>
-      <td mat-cell *matCellDef="let portfolio"> {{portfolio.assetId}} </td>
+      <td mat-cell *matCellDef="let portfolio" class='right-align'> {{portfolio.assetId}} </td>
     </ng-container>
   
     <ng-container matColumnDef="currency">
       <th mat-header-cell *matHeaderCellDef> Currency </th>
-      <td mat-cell *matCellDef="let portfolio"> {{portfolio.currency|currency }} </td>
+      <td mat-cell *matCellDef="let portfolio"> {{portfolio.currency }} </td>
     </ng-container>
   
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef> Price </th>
-      <td mat-cell *matCellDef="let portfolio"> {{portfolio.price}} </td>
+      <td mat-cell *matCellDef="let portfolio" class='right-align'> {{portfolio.price}} </td>
     </ng-container>
   
     <ng-container matColumnDef="priceDate">
