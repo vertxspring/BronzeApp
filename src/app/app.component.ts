@@ -98,6 +98,7 @@ export class AppComponent {
   displayedColumns: string[] = ['assetId', 'currency', 'price', 'priceDate'];
   dataSource = undefined;
   buttonClicked = false;
+  
   getData(keyword: string) {
     this.buttonClicked = true;
     this.dataSource = MOCK_DATA[keyword];
