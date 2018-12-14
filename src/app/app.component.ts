@@ -1,18 +1,92 @@
 import { Component } from '@angular/core';
-import { PeriodicElement } from './model/portfolio';
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
+
+const MOCK_DATA = {
+  portfolio1: [
+    {
+      'assetId': '1',
+      'currency': '2',
+      'price': '3',
+      'priceDate': '4'
+
+    },
+    {
+      'assetId': '5',
+      'currency': '6',
+      'price': '7',
+      'priceDate': '8'
+
+    },
+    {
+      'assetId': '9',
+      'currency': '10',
+      'price': '11',
+      'priceDate': '12'
+
+    },
+    {
+      'assetId': '13',
+      'currency': '14',
+      'price': '15',
+      'priceDate': '16'
+
+    },
+    {
+      'assetId': '17',
+      'currency': '18',
+      'price': '19',
+      'priceDate': '20'
+
+    },
+    {
+      'assetId': '21',
+      'currency': '22',
+      'price': '23',
+      'priceDate': '24'
+
+    }
+  ], portfolio2: [
+    {
+      'assetId': '25',
+      'currency': '26',
+      'price': '27',
+      'priceDate': '28'
+
+    },
+    {
+      'assetId': '29',
+      'currency': '30',
+      'price': '31',
+      'priceDate': '32'
+
+    },
+    {
+      'assetId': '33',
+      'currency': '34',
+      'price': '35',
+      'priceDate': '36'
+
+    },
+    {
+      'assetId': '37',
+      'currency': '38',
+      'price': '39',
+      'priceDate': '40'
+
+    },
+    {
+      'assetId': '41',
+      'currency': '42',
+      'price': '43',
+      'priceDate': '44'
+
+    }
+
+
+
+  ]
+}
+
 
 @Component({
   selector: 'app-root',
@@ -20,7 +94,15 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+
+  displayedColumns: string[] = ['assetId', 'currency', 'price', 'priceDate'];
+  dataSource = undefined;
+  buttonClicked = false;
+  getData(keyword: string) {
+    this.buttonClicked = true;
+    this.dataSource = MOCK_DATA[keyword];
+  }
+
+
 }
+
